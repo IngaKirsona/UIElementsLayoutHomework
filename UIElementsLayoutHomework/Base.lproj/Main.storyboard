@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIElementsLayoutHomework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-CB-8qf">
-                                <rect key="frame" x="297" y="234" width="244" height="43"/>
+                                <rect key="frame" x="173" y="482" width="120" height="43"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <state key="normal" title="Right Button">
@@ -24,7 +24,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpq-iy-E7J">
-                                <rect key="frame" x="27" y="234" width="244" height="43"/>
+                                <rect key="frame" x="27" y="482" width="120" height="43"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="5dP-g4-qKG"/>
@@ -35,12 +35,38 @@
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iF4-OM-1To">
+                                <rect key="frame" x="27" y="404" width="120" height="43"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Dnh-6O-SmQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <state key="normal" title="LeftButton">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-Q5-QqW">
+                                <rect key="frame" x="173" y="404" width="120" height="43"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <state key="normal" title="Right Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1962632835" green="0.23057657479999999" blue="0.29020285610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="iF4-OM-1To" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="40X-Ns-jgZ"/>
+                            <constraint firstItem="eZq-Q5-QqW" firstAttribute="width" secondItem="iF4-OM-1To" secondAttribute="width" id="45Q-lU-Srz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k3b-CB-8qf" secondAttribute="bottom" constant="43" id="6Tm-A0-EiW"/>
+                            <constraint firstItem="Lpq-iy-E7J" firstAttribute="top" secondItem="iF4-OM-1To" secondAttribute="bottom" constant="35" id="73u-uC-1SR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-Q5-QqW" secondAttribute="trailing" constant="27" id="C1u-sk-oXQ"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="width" secondItem="Lpq-iy-E7J" secondAttribute="width" id="F2X-3a-d3u"/>
+                            <constraint firstItem="eZq-Q5-QqW" firstAttribute="width" secondItem="iF4-OM-1To" secondAttribute="width" id="MLl-gw-sr4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3b-CB-8qf" secondAttribute="trailing" constant="27" id="VCw-CO-blM"/>
+                            <constraint firstItem="k3b-CB-8qf" firstAttribute="top" secondItem="eZq-Q5-QqW" secondAttribute="bottom" constant="35" id="ZFk-h9-V12"/>
+                            <constraint firstItem="eZq-Q5-QqW" firstAttribute="leading" secondItem="iF4-OM-1To" secondAttribute="trailing" constant="26" id="aeT-Kf-r5v"/>
                             <constraint firstItem="Lpq-iy-E7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="q25-KS-igo"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="leading" secondItem="Lpq-iy-E7J" secondAttribute="trailing" constant="26" id="qyc-W2-iA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lpq-iy-E7J" secondAttribute="bottom" constant="43" id="r7U-ID-VSr"/>
