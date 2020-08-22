@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,11 +17,16 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-CB-8qf">
                                 <rect key="frame" x="173" y="482" width="120" height="43"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98403221370000005" green="0.91927093270000004" blue="0.76074606180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpq-iy-E7J">
                                 <rect key="frame" x="27" y="482" width="120" height="43"/>
@@ -34,6 +39,11 @@
                                 <state key="normal" title="LeftButton">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iF4-OM-1To">
                                 <rect key="frame" x="27" y="404" width="120" height="43"/>
@@ -45,20 +55,48 @@
                                 <state key="normal" title="LeftButton">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-Q5-QqW">
                                 <rect key="frame" x="173" y="404" width="120" height="43"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97405010461807251" green="0.92095731392516123" blue="0.77794097129284268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj3-qm-VcT">
+                                <rect key="frame" x="27" y="247" width="266" height="118"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="DT7-Kd-A8b"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="J6p-Df-aFf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1962632835" green="0.23057657479999999" blue="0.29020285610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="cj3-qm-VcT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="02R-ch-L0v"/>
                             <constraint firstItem="iF4-OM-1To" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="40X-Ns-jgZ"/>
                             <constraint firstItem="eZq-Q5-QqW" firstAttribute="width" secondItem="iF4-OM-1To" secondAttribute="width" id="45Q-lU-Srz"/>
+                            <constraint firstItem="eZq-Q5-QqW" firstAttribute="top" secondItem="cj3-qm-VcT" secondAttribute="bottom" constant="39" id="55v-nC-JNm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k3b-CB-8qf" secondAttribute="bottom" constant="43" id="6Tm-A0-EiW"/>
                             <constraint firstItem="Lpq-iy-E7J" firstAttribute="top" secondItem="iF4-OM-1To" secondAttribute="bottom" constant="35" id="73u-uC-1SR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-Q5-QqW" secondAttribute="trailing" constant="27" id="C1u-sk-oXQ"/>
@@ -67,17 +105,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3b-CB-8qf" secondAttribute="trailing" constant="27" id="VCw-CO-blM"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="top" secondItem="eZq-Q5-QqW" secondAttribute="bottom" constant="35" id="ZFk-h9-V12"/>
                             <constraint firstItem="eZq-Q5-QqW" firstAttribute="leading" secondItem="iF4-OM-1To" secondAttribute="trailing" constant="26" id="aeT-Kf-r5v"/>
+                            <constraint firstItem="cj3-qm-VcT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m4p-QT-TKg"/>
                             <constraint firstItem="Lpq-iy-E7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="q25-KS-igo"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="leading" secondItem="Lpq-iy-E7J" secondAttribute="trailing" constant="26" id="qyc-W2-iA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lpq-iy-E7J" secondAttribute="bottom" constant="43" id="r7U-ID-VSr"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="height" secondItem="Lpq-iy-E7J" secondAttribute="height" id="zGi-aM-v9S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="116"/>
+            <point key="canvasLocation" x="138.75" y="115.14084507042254"/>
         </scene>
     </scenes>
 </document>
