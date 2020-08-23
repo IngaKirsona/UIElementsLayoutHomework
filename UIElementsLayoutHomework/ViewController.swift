@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        styleUI()
         
+        }
+    func styleUI(){
         mainImageView.layer.cornerRadius = 10
         mainImageView.layer.borderWidth = 2
         mainImageView.layer.borderColor = UIColor.black.cgColor
@@ -36,9 +39,47 @@ class ViewController: UIViewController {
         styleOutletCollection.forEach {button in button.layer.cornerRadius = 10
             button.layer.borderWidth = 2
             button.layer.borderColor = UIColor.black.cgColor
-        }
     }
-
-
 }
-
+//MARK:- Logic Style to MyLabel, Buttons and Image
+    
+    func changeButtonImmage(with image: String){
+        leftButtonUp.setImage(UIImage(named: image), for: .normal)
+        leftButtonUp.tintColor = .white
+        leftButtonUp.imageEdgeInsets = UIEdgeInsets(top: 6, left: 0, bottom: 10, right: 15)
+        self.view.backgroundColor = UIColor.black
+    }
+    
+    func changeTextLabel(){
+        myLabel.text = ("New text was added")
+        myLabel.backgroundColor = .white
+        myLabel.textColor = .blue
+        myLabel.textAlignment = .center
+    }
+    
+    func changeImage (){
+        mainImageView.image = (UIImage(named: "star.png"))
+        mainImageView.backgroundColor = .white
+    }
+//MARK:- IBActions for buttons
+    @IBAction func touchDragOutsideTapped(_ sender: Any) {
+        print("touchDragOutsideTapped")
+        changeButtonImmage(with: "home.png")
+    }
+    
+    @IBAction func touchUpInside(_ sender: Any) {
+        print("touchUpInside")
+        changeButtonImmage(with: "star.png")
+    }
+    
+    @IBAction func touchDown(_ sender: Any) {
+        print("touchDown")
+        changeTextLabel()
+    }
+        
+    @IBAction func touchDragInside(_ sender: Any) {
+        print("touchDrahInside")
+        changeImage()
+    }
+    
+}
