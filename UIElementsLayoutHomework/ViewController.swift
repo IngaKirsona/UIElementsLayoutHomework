@@ -50,16 +50,25 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
     }
     
+    func changeLeftButtonText(){
+        leftButtonDown.setTitle("CHANGED", for:.normal)
+        leftButtonDown.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.white
+        self.mainImageView.backgroundColor = UIColor.gray
+    }
+    
     func changeTextLabel(){
         myLabel.text = ("New text was added")
         myLabel.backgroundColor = .white
         myLabel.textColor = .blue
         myLabel.textAlignment = .center
+        self.view.backgroundColor = UIColor.darkGray
     }
     
     func changeImage (){
         mainImageView.image = (UIImage(named: "star.png"))
         mainImageView.backgroundColor = .white
+        self.view.backgroundColor = UIColor.gray
     }
 //MARK:- IBActions for buttons
     @IBAction func touchDragOutsideTapped(_ sender: Any) {
@@ -69,7 +78,7 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpInside(_ sender: Any) {
         print("touchUpInside")
-        changeButtonImmage(with: "star.png")
+        changeLeftButtonText()
     }
     
     @IBAction func touchDown(_ sender: Any) {
