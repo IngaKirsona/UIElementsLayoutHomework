@@ -46,6 +46,7 @@
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Dnh-6O-SmQ"/>
+                                    <constraint firstAttribute="height" constant="43" id="a5f-dJ-o4S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <state key="normal" title="LeftButton">
@@ -91,6 +92,7 @@
                             <constraint firstItem="cj3-qm-VcT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="02R-ch-L0v"/>
                             <constraint firstItem="iF4-OM-1To" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="40X-Ns-jgZ"/>
                             <constraint firstItem="eZq-Q5-QqW" firstAttribute="width" secondItem="iF4-OM-1To" secondAttribute="width" id="45Q-lU-Srz"/>
+                            <constraint firstItem="iF4-OM-1To" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.403382" id="4cZ-WL-bnh"/>
                             <constraint firstItem="eZq-Q5-QqW" firstAttribute="top" secondItem="cj3-qm-VcT" secondAttribute="bottom" constant="39" id="55v-nC-JNm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k3b-CB-8qf" secondAttribute="bottom" constant="43" id="6Tm-A0-EiW"/>
                             <constraint firstItem="Lpq-iy-E7J" firstAttribute="top" secondItem="iF4-OM-1To" secondAttribute="bottom" constant="35" id="73u-uC-1SR"/>
@@ -98,6 +100,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZq-Q5-QqW" secondAttribute="trailing" constant="27" id="C1u-sk-oXQ"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="width" secondItem="Lpq-iy-E7J" secondAttribute="width" id="F2X-3a-d3u"/>
                             <constraint firstItem="eZq-Q5-QqW" firstAttribute="width" secondItem="iF4-OM-1To" secondAttribute="width" id="MLl-gw-sr4"/>
+                            <constraint firstItem="iF4-OM-1To" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0479911" id="N91-e1-JSd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3b-CB-8qf" secondAttribute="trailing" constant="27" id="VCw-CO-blM"/>
                             <constraint firstItem="X4W-nK-bZ2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="Xoc-Zh-cHK"/>
                             <constraint firstItem="k3b-CB-8qf" firstAttribute="top" secondItem="eZq-Q5-QqW" secondAttribute="bottom" constant="35" id="ZFk-h9-V12"/>
